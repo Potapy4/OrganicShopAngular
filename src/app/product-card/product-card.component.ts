@@ -14,8 +14,12 @@ export class ProductCardComponent {
 
   constructor(private cartService: ShoppingCartService) { }
 
-  public addToCart(product: Product) {
-    this.cartService.addToCart(product);
+  public addToCart() {
+    this.cartService.addToCart(this.product);
+  }
+
+  public removeFromCart() {
+    this.cartService.removeFromCart(this.product);
   }
 
   public getQuantity() {
