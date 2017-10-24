@@ -4,6 +4,7 @@ import { AppUser } from '../models/app-user';
 import { Subscription } from 'rxjs/Subscription';
 import { ShoppingCartService } from '../services/shopping-cart.service';
 import { Observable } from 'rxjs/Observable';
+import { ShoppingCart } from '../models/shopping-cart';
 
 @Component({
   selector: 'bs-navbar',

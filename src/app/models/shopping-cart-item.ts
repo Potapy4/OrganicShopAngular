@@ -1,5 +1,12 @@
 import { Product } from './product';
-export interface ShoppingCartItem {
-    product: Product;
-    quantity: number;
+
+export class ShoppingCartItem {
+    public $key: string;
+    public title: string;
+    public imageUrl: string;
+    public price: number;
+    public quantity: number;
+
+    get totalPrice() { return this.price * this.quantity; }
+
 }
