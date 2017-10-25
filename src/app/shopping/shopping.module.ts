@@ -1,6 +1,4 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AuthGuard } from 'shared/services/auth-guard.service';
 
@@ -17,8 +15,6 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 @NgModule({
   imports: [
     SharedModule,
-    CommonModule,
-    FormsModule,
     RouterModule.forChild([
       { path: 'products', component: ProductsComponent },
       { path: 'shopping-cart', component: ShoppingCartComponent },
